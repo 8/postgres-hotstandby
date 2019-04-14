@@ -48,6 +48,6 @@ ERROR:  cannot execute INSERT in a read-only transaction
 
 ## TODO
 - [x] Remove volumes without pruning all volumes
-- [ ] Configure an Replication Slot to prevent WAL recycling
+- [x] Configure an Replication Slot to prevent WAL recycling
 - [ ] Instead of `sleep 10` wait until the master becomes available for backup restoration.
 - [ ] Add explanation of how everything works
