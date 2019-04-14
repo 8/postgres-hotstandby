@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  master:
+    image: master
+    hostname: master
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+  hotstandby:
+    image: hotstandby
+    hostname: hotstandby
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5433:5432
