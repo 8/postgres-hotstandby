@@ -1,4 +1,4 @@
-FROM postgres
+FROM postgres:11.2
 COPY postgresql.conf /docker-entrypoint-initdb.d/
 COPY pg_hba.conf /docker-entrypoint-initdb.d/
 COPY setup.sh /docker-entrypoint-initdb.d/

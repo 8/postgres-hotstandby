@@ -1,4 +1,4 @@
-FROM postgres
+FROM postgres:11.2
 
 COPY postgresql.conf /docker-entrypoint-initdb.d/
 COPY recovery.conf /docker-entrypoint-initdb.d/
