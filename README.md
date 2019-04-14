@@ -18,7 +18,6 @@ digraph {
 ## How to start
 1. Build all docker images, e.g. by executing `build-all.cmd`.
 2. Start and connect the containers, e.g. by executing `compose.cmd`.
-ATTN: compose.cmd prunes all containers and volumes atm, you might not want that.
 
 If the hotstandby setup was successful, you should see the following lines in the hostandby log:
 ```
@@ -48,6 +47,6 @@ ERROR:  cannot execute INSERT in a read-only transaction
 ```
 
 ## TODO
-- [ ] Use named volumes that can be removed by name in `compose.cmd`
+- [x] Remove volumes without pruning all volumes
 - [ ] Instead of `sleep 10` wait until the master becomes available for backup restoration.
 - [ ] Add explanation of how everything works

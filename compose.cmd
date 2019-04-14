@@ -1,3 +1,2 @@
-docker container prune --force
-docker volume prune --force
+docker-compose down -v
 docker-compose up
